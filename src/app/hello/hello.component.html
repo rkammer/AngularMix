@@ -1,0 +1,25 @@
+<p>
+  Hello, {{getName()}}!
+</p>
+
+<br>
+
+<ul *ngFor='let customer of customers'>
+    <li>{{customer}}</li>
+</ul>
+
+<br>
+
+<ul *ngFor="let city of cities">
+    <li>{{city.name}} - {{city.population}}</li>
+</ul>
+
+<input type="text" [(ngModel)]="selectedName" [style.background]="selectedColor">{{selectedName}}
+
+<br>
+
+
+<span (click)="clickMe()">click me</span>
+<div [hidden]="isHidden">
+    displaying content
+</div>
